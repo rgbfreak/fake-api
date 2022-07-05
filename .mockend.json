@@ -2,8 +2,10 @@
   "User": {
     "user_name": { "regexp": "[A-Z][a-z]{5,10}" },
     "date": {
-      "min": "2010-01-01T00:00:00Z",
-      "max": "2020-12-31T23:59:59Z"
+      "dateTime": {
+        "min": "2010-01-01T00:00:00Z",
+        "max": "2020-12-31T23:59:59Z"
+      }
     },
     "department": {
       "string": [
