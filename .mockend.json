@@ -10,10 +10,33 @@
     "department": {
       "string": [
         "Webdev",
-        "Technik"
+        "Technik",
+        "Verwaltung"
       ]
     },
     "steps": { "regexp": "[0-9]{2}\/[0-9]{2}" },
     "progress": { "regexp": "[0-9]{2}"}
+  },
+  "Task": {
+    "task_name": {
+      "loremWords": { "minLength": 5, "maxLength": 20 }
+    },
+    "clerk": {
+      "belongsTo": "User"
+    },
+    "date": {
+      "dateTime": {
+        "min": "2010-01-01T00:00:00Z",
+        "max": "2020-12-31T23:59:59Z"
+      }
+    },
+    "department": {
+      "string": [
+        "Webdev",
+        "Technik",
+        "Verwaltung"
+      ]
+    },
+    "progress": { "regexp": "[0-9]{3}"}
   }
 }
