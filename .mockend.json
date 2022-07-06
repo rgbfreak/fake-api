@@ -15,7 +15,7 @@
       ]
     },
     "steps": { "regexp": "[0-9]{2}\/[0-9]{2}" },
-    "progress": { "regexp": "[0-9]{2}"}
+    "progress": { "int": { "min": 0, "max": 100}}
   },
   "Task": {
     "task_name": {
@@ -37,6 +37,6 @@
         "Verwaltung"
       ]
     },
-    "progress": { "regexp": "[0-9]{3}"}
+    "progress": { "int": { "min": 0, "max": 100}}
   }
 }
